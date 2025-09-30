@@ -1,0 +1,17 @@
+.vscode/
+__pycache__/ 
+
+# Backup directories
+backup/
+
+# Baseline directories
+baselines/
+
+# Script directories
+scripts/
+
+# Results directories
+results/
+
+# Jupyter Notebook files
+*.ipynb
