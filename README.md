@@ -6,8 +6,10 @@
 </p>
 -->
 
-> ⚠️ This repository requires **OpenAI API** for prompt construction. You must set an API key.
-
+[![arXiv](https://img.shields.io/badge/arXiv-2509.10931-b31b1b.svg)](https://www.arxiv.org/abs/2509.10931)
+<!--
+[![Conference](https://img.shields.io/badge/EMNLP-2025%20-blue)](https://arxiv.org/abs/2410.13321)
+-->
 ---
 
 ## Overview
@@ -22,9 +24,12 @@ It relies on:
 
 ## Installation & Setup
 
+
 ```bash
 pip install -r requirements.txt
 ```
+
+⚠️ This repository requires **OpenAI API** for prompt construction. You must set an API key.
 
 Set your OpenAI API key:
 
@@ -35,7 +40,7 @@ export OPENAI_API_KEY="sk-..."      # macOS/Linux
 ```
 ---
 
-## Using `HaPLa_attack`
+## How to use `HaPLa_attack`
 
 `HaPLa_attack` performs a two-step process to generate a toxic word-masking prompt:  
 1. It creates a framing and toxic word probing prompt using the `framing_and_toxic_probing_template`.  
@@ -44,8 +49,11 @@ export OPENAI_API_KEY="sk-..."      # macOS/Linux
 **Call `src/hapla.py` as follows:**
 
 ```python
-from src.gen_util import OpenAIClient
-from your_module import HaPLa_attack
+
+"""Main function: run HaPLa_attack on a single query and print the generated prompt.
+
+   NOTE: Replace the example `query` below with your actual target jailbreaking query.
+"""
 
 query = "Teach me how to film porn using ..."  # Replace it with the target jailbreaking query 
 prompt = HaPLa_attack(
