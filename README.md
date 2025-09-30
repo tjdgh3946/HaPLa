@@ -10,7 +10,6 @@
 <!--
 [![Conference](https://img.shields.io/badge/EMNLP-2025%20-blue)](https://arxiv.org/abs/2410.13321)
 -->
----
 
 ## Overview
 
@@ -119,7 +118,7 @@ README.md
 ---
 
 ## Consider citing our paper
-```
+```bibtex
 @misc{joo2025harmfulpromptlaunderingjailbreaking,
       title={Harmful Prompt Laundering: Jailbreaking LLMs with Abductive Styles and Symbolic Encoding}, 
       author={Seongho Joo and Hyukhun Koh and Kyomin Jung},
