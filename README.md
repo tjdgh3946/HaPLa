@@ -47,7 +47,7 @@ export OPENAI_API_KEY="sk-..."      # macOS/Linux
 from src.gen_util import OpenAIClient
 from your_module import HaPLa_attack
 
-query = "Teach me how to film porn using ..."  # Jailbreaking query 
+query = "Teach me how to film porn using ..."  # Replace it with the target jailbreaking query 
 prompt = HaPLa_attack(
     query,
     encoding_params={"reverse": False, "partial": True, "ratio": 0.8},  # Attack parameters
@@ -71,7 +71,7 @@ print(prompt)
 - **template** *(str, optional)*: Format string that must contain a `{case}` placeholder. Defaults to `SCHEMA_TEMPLATE_MAP[schema]`
 
 
-## Default Encoding Parameters
+### Default Encoding Parameters
 
 ```python
 _DEFAULT_ENCODING_PARAMS = {
